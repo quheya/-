@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A5D2B6EE27BA525100BAFA22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D2B6ED27BA525100BAFA22 /* AppDelegate.m */; };
-		A5D2B6F127BA525100BAFA22 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D2B6F027BA525100BAFA22 /* SceneDelegate.m */; };
 		A5D2B6F427BA525100BAFA22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D2B6F327BA525100BAFA22 /* ViewController.m */; };
 		A5D2B6F727BA525100BAFA22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D2B6F527BA525100BAFA22 /* Main.storyboard */; };
 		A5D2B6F927BA525500BAFA22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D2B6F827BA525500BAFA22 /* Assets.xcassets */; };
@@ -17,6 +16,8 @@
 		A5D2B70927BA525600BAFA22 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D2B70827BA525600BAFA22 /* ______Tests.m */; };
 		A5D2B71327BA525600BAFA22 /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D2B71227BA525600BAFA22 /* ______UITests.m */; };
 		A5D2B71527BA525600BAFA22 /* ______UITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D2B71427BA525600BAFA22 /* ______UITestsLaunchTests.m */; };
+		A5D2B72227BA57A500BAFA22 /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D2B72127BA57A500BAFA22 /* IQKeyboardManager.framework */; };
+		A5D2B72427BA57AB00BAFA22 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D2B72327BA57AB00BAFA22 /* Masonry.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42A6454EE1FB3A3303684375 /* Pods-沈化大校园通.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-沈化大校园通.debug.xcconfig"; path = "Target Support Files/Pods-沈化大校园通/Pods-沈化大校园通.debug.xcconfig"; sourceTree = "<group>"; };
+		5B2D2A0FDDABE0C83CC01070 /* Pods_______.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_______.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC690991D88212B1C44E0E4 /* Pods-沈化大校园通.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-沈化大校园通.release.xcconfig"; path = "Target Support Files/Pods-沈化大校园通/Pods-沈化大校园通.release.xcconfig"; sourceTree = "<group>"; };
 		A5D2B6E927BA525100BAFA22 /* 沈化大校园通.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "沈化大校园通.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D2B6EC27BA525100BAFA22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A5D2B6ED27BA525100BAFA22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A5D2B6EF27BA525100BAFA22 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		A5D2B6F027BA525100BAFA22 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		A5D2B6F227BA525100BAFA22 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A5D2B6F327BA525100BAFA22 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A5D2B6F627BA525100BAFA22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		A5D2B70E27BA525600BAFA22 /* 沈化大校园通UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "沈化大校园通UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D2B71227BA525600BAFA22 /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
 		A5D2B71427BA525600BAFA22 /* ______UITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITestsLaunchTests.m"; sourceTree = "<group>"; };
+		A5D2B72127BA57A500BAFA22 /* IQKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D2B72327BA57AB00BAFA22 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D2B72427BA57AB00BAFA22 /* Masonry.framework in Frameworks */,
+				A5D2B72227BA57A500BAFA22 /* IQKeyboardManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		352141E7FA770885F4B581A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5D2B72327BA57AB00BAFA22 /* Masonry.framework */,
+				A5D2B72127BA57A500BAFA22 /* IQKeyboardManager.framework */,
+				5B2D2A0FDDABE0C83CC01070 /* Pods_______.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5D2B6E027BA525100BAFA22 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +104,8 @@
 				A5D2B70727BA525600BAFA22 /* 沈化大校园通Tests */,
 				A5D2B71127BA525600BAFA22 /* 沈化大校园通UITests */,
 				A5D2B6EA27BA525100BAFA22 /* Products */,
+				FC4D9688CD247506F7E30C57 /* Pods */,
+				352141E7FA770885F4B581A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,8 +124,6 @@
 			children = (
 				A5D2B6EC27BA525100BAFA22 /* AppDelegate.h */,
 				A5D2B6ED27BA525100BAFA22 /* AppDelegate.m */,
-				A5D2B6EF27BA525100BAFA22 /* SceneDelegate.h */,
-				A5D2B6F027BA525100BAFA22 /* SceneDelegate.m */,
 				A5D2B6F227BA525100BAFA22 /* ViewController.h */,
 				A5D2B6F327BA525100BAFA22 /* ViewController.m */,
 				A5D2B6F527BA525100BAFA22 /* Main.storyboard */,
@@ -136,6 +152,15 @@
 			path = "沈化大校园通UITests";
 			sourceTree = "<group>";
 		};
+		FC4D9688CD247506F7E30C57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42A6454EE1FB3A3303684375 /* Pods-沈化大校园通.debug.xcconfig */,
+				8CC690991D88212B1C44E0E4 /* Pods-沈化大校园通.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5D2B71827BA525600BAFA22 /* Build configuration list for PBXNativeTarget "沈化大校园通" */;
 			buildPhases = (
+				2C0F384EF94FB3AEB658667B /* [CP] Check Pods Manifest.lock */,
 				A5D2B6E527BA525100BAFA22 /* Sources */,
 				A5D2B6E627BA525100BAFA22 /* Frameworks */,
 				A5D2B6E727BA525100BAFA22 /* Resources */,
+				5177DC53F8B2373CAE6FA88A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +288,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C0F384EF94FB3AEB658667B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-沈化大校园通-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5177DC53F8B2373CAE6FA88A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-沈化大校园通/Pods-沈化大校园通-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-沈化大校园通/Pods-沈化大校园通-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-沈化大校园通/Pods-沈化大校园通-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A5D2B6E527BA525100BAFA22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -269,7 +338,6 @@
 				A5D2B6F427BA525100BAFA22 /* ViewController.m in Sources */,
 				A5D2B6EE27BA525100BAFA22 /* AppDelegate.m in Sources */,
 				A5D2B6FF27BA525500BAFA22 /* main.m in Sources */,
-				A5D2B6F127BA525100BAFA22 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +507,7 @@
 		};
 		A5D2B71927BA525600BAFA22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A6454EE1FB3A3303684375 /* Pods-沈化大校园通.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,7 +517,6 @@
 				INFOPLIST_FILE = "沈化大校园通/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -465,6 +533,7 @@
 		};
 		A5D2B71A27BA525600BAFA22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CC690991D88212B1C44E0E4 /* Pods-沈化大校园通.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -474,7 +543,6 @@
 				INFOPLIST_FILE = "沈化大校园通/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
