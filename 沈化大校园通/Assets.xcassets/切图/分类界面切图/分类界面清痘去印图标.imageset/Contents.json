@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "分类界面清痘去印图标.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "分类界面清痘去印图标@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "分类界面清痘去印图标@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

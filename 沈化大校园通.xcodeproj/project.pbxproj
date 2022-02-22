@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A5D2B6EE27BA525100BAFA22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D2B6ED27BA525100BAFA22 /* AppDelegate.m */; };
-		A5D2B6F427BA525100BAFA22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D2B6F327BA525100BAFA22 /* ViewController.m */; };
 		A5D2B6F727BA525100BAFA22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D2B6F527BA525100BAFA22 /* Main.storyboard */; };
 		A5D2B6F927BA525500BAFA22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D2B6F827BA525500BAFA22 /* Assets.xcassets */; };
 		A5D2B6FC27BA525500BAFA22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D2B6FA27BA525500BAFA22 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,12 @@
 		A5D2B71527BA525600BAFA22 /* ______UITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D2B71427BA525600BAFA22 /* ______UITestsLaunchTests.m */; };
 		A5D2B72227BA57A500BAFA22 /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D2B72127BA57A500BAFA22 /* IQKeyboardManager.framework */; };
 		A5D2B72427BA57AB00BAFA22 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D2B72327BA57AB00BAFA22 /* Masonry.framework */; };
+		A5D5AB3327C4E6DE00E1424C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D5AB3127C4E6DE00E1424C /* MainViewController.m */; };
+		A5D5AB3727C4E6EC00E1424C /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D5AB3627C4E6EC00E1424C /* WelcomeViewController.m */; };
+		A5D5AB3B27C4E6F500E1424C /* InterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D5AB3A27C4E6F500E1424C /* InterViewController.m */; };
+		A5D5AB4227C4E6FD00E1424C /* MyTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D5AB4027C4E6FD00E1424C /* MyTopView.m */; };
+		A5D5AB4327C4E6FD00E1424C /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D5AB4127C4E6FD00E1424C /* MyViewController.m */; };
+		A5D5AB4527C4E72700E1424C /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D5AB4427C4E72700E1424C /* MainTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +49,6 @@
 		A5D2B6E927BA525100BAFA22 /* 沈化大校园通.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "沈化大校园通.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D2B6EC27BA525100BAFA22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A5D2B6ED27BA525100BAFA22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A5D2B6F227BA525100BAFA22 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A5D2B6F327BA525100BAFA22 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A5D2B6F627BA525100BAFA22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5D2B6F827BA525500BAFA22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5D2B6FB27BA525500BAFA22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +61,18 @@
 		A5D2B71427BA525600BAFA22 /* ______UITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITestsLaunchTests.m"; sourceTree = "<group>"; };
 		A5D2B72127BA57A500BAFA22 /* IQKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D2B72327BA57AB00BAFA22 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D5AB3127C4E6DE00E1424C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A5D5AB3227C4E6DE00E1424C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		A5D5AB3527C4E6EC00E1424C /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		A5D5AB3627C4E6EC00E1424C /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		A5D5AB3927C4E6F500E1424C /* InterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterViewController.h; sourceTree = "<group>"; };
+		A5D5AB3A27C4E6F500E1424C /* InterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterViewController.m; sourceTree = "<group>"; };
+		A5D5AB3D27C4E6FD00E1424C /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		A5D5AB3F27C4E6FD00E1424C /* MyTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTopView.h; sourceTree = "<group>"; };
+		A5D5AB4027C4E6FD00E1424C /* MyTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTopView.m; sourceTree = "<group>"; };
+		A5D5AB4127C4E6FD00E1424C /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		A5D5AB4427C4E72700E1424C /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		A5D5AB4827C4E75700E1424C /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,10 +137,14 @@
 		A5D2B6EB27BA525100BAFA22 /* 沈化大校园通 */ = {
 			isa = PBXGroup;
 			children = (
+				A5D5AB4827C4E75700E1424C /* MainTabBarController.h */,
+				A5D5AB4427C4E72700E1424C /* MainTabBarController.m */,
+				A5D5AB3C27C4E6FD00E1424C /* 我的 */,
+				A5D5AB3827C4E6F500E1424C /* 互动 */,
+				A5D5AB3427C4E6EC00E1424C /* 迎新 */,
+				A5D5AB3027C4E6DE00E1424C /* 首页 */,
 				A5D2B6EC27BA525100BAFA22 /* AppDelegate.h */,
 				A5D2B6ED27BA525100BAFA22 /* AppDelegate.m */,
-				A5D2B6F227BA525100BAFA22 /* ViewController.h */,
-				A5D2B6F327BA525100BAFA22 /* ViewController.m */,
 				A5D2B6F527BA525100BAFA22 /* Main.storyboard */,
 				A5D2B6F827BA525500BAFA22 /* Assets.xcassets */,
 				A5D2B6FA27BA525500BAFA22 /* LaunchScreen.storyboard */,
@@ -150,6 +169,52 @@
 				A5D2B71427BA525600BAFA22 /* ______UITestsLaunchTests.m */,
 			);
 			path = "沈化大校园通UITests";
+			sourceTree = "<group>";
+		};
+		A5D5AB3027C4E6DE00E1424C /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				A5D5AB3127C4E6DE00E1424C /* MainViewController.m */,
+				A5D5AB3227C4E6DE00E1424C /* MainViewController.h */,
+			);
+			path = "首页";
+			sourceTree = SOURCE_ROOT;
+		};
+		A5D5AB3427C4E6EC00E1424C /* 迎新 */ = {
+			isa = PBXGroup;
+			children = (
+				A5D5AB3527C4E6EC00E1424C /* WelcomeViewController.h */,
+				A5D5AB3627C4E6EC00E1424C /* WelcomeViewController.m */,
+			);
+			path = "迎新";
+			sourceTree = SOURCE_ROOT;
+		};
+		A5D5AB3827C4E6F500E1424C /* 互动 */ = {
+			isa = PBXGroup;
+			children = (
+				A5D5AB3927C4E6F500E1424C /* InterViewController.h */,
+				A5D5AB3A27C4E6F500E1424C /* InterViewController.m */,
+			);
+			path = "互动";
+			sourceTree = SOURCE_ROOT;
+		};
+		A5D5AB3C27C4E6FD00E1424C /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				A5D5AB3D27C4E6FD00E1424C /* MyViewController.h */,
+				A5D5AB3E27C4E6FD00E1424C /* View */,
+				A5D5AB4127C4E6FD00E1424C /* MyViewController.m */,
+			);
+			path = "我的";
+			sourceTree = SOURCE_ROOT;
+		};
+		A5D5AB3E27C4E6FD00E1424C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5D5AB3F27C4E6FD00E1424C /* MyTopView.h */,
+				A5D5AB4027C4E6FD00E1424C /* MyTopView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FC4D9688CD247506F7E30C57 /* Pods */ = {
@@ -335,9 +400,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5D2B6F427BA525100BAFA22 /* ViewController.m in Sources */,
+				A5D5AB3727C4E6EC00E1424C /* WelcomeViewController.m in Sources */,
+				A5D5AB4227C4E6FD00E1424C /* MyTopView.m in Sources */,
+				A5D5AB4527C4E72700E1424C /* MainTabBarController.m in Sources */,
+				A5D5AB4327C4E6FD00E1424C /* MyViewController.m in Sources */,
+				A5D5AB3B27C4E6F500E1424C /* InterViewController.m in Sources */,
 				A5D2B6EE27BA525100BAFA22 /* AppDelegate.m in Sources */,
 				A5D2B6FF27BA525500BAFA22 /* main.m in Sources */,
+				A5D5AB3327C4E6DE00E1424C /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
