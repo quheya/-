@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *idStr;
 @property (nonatomic, copy) NSString *classStr;
 @property (nonatomic, copy) NSString *schoolStr;
+@property (nonatomic, strong) void (^nameBtnBlick)(void);
 
 
 @end

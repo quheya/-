@@ -10,6 +10,8 @@
 #import "InterViewController.h"
 #import "WelcomeViewController.h"
 #import "MyViewController.h"
+#import "NavigationViewController.h"
+#import "DBObject.h"
 
 @interface MainTabBarController ()
 
@@ -44,7 +46,10 @@
     myVc.tabBarItem.image = [UIImage imageNamed:@"bar_item_user"];
     myVc.title = @"我的";
     myVc.view.backgroundColor = [UIColor whiteColor];
-    [self addChildViewController:myVc];
+    NavigationViewController *myNav = [[NavigationViewController alloc] initWithRootViewController:myVc];
+    [self addChildViewController:myNav];
+    //----------------------------------------打开数据库并新建表--------------------------------------
+    [[DBObject sharedInstance] addDatabaseAndTableMethod];
 }
 
 @end

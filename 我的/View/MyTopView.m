@@ -65,6 +65,7 @@
     _nameButton.titleLabel.textColor = [UIColor whiteColor];
     _nameButton.backgroundColor = [UIColor clearColor];
     _nameButton.titleLabel.textAlignment = NSTextAlignmentLeft;
+    [_nameButton addTarget:self action:@selector(nameBtnClick) forControlEvents:UIControlEventTouchUpInside];
     _lineView.backgroundColor = [UIColor whiteColor];
     _schoolLabel.backgroundColor = [UIColor clearColor];
     _schoolLabel.textColor = [UIColor whiteColor];
@@ -117,6 +118,10 @@
         make.left.equalTo(_hlineView.mas_left).with.offset([UIScreen mainScreen].bounds.size.width / 6);
         make.height.mas_equalTo(10);
     }];
+}
+
+- (void)nameBtnClick {
+    self.nameBtnBlick();
 }
 
 //MARK: --Set

@@ -8,6 +8,8 @@
 #import <Masonry/Masonry.h>
 #import "MyViewController.h"
 #import "MyTopView.h"
+#import "LoginViewController.h"
+#import "SetViewController.h"
 
 @interface MyViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) MyTopView *mytopView;
@@ -39,6 +41,12 @@
     _mytopView.schoolStr = @"暂无数据";
     _mytopView.idStr = @"***";
     _mytopView.classStr = @"***";
+    __weak typeof(self) weakSelf = self;
+    _mytopView.nameBtnBlick = ^{
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        LoginViewController *loginVC = [[LoginViewController alloc] init];
+        [strongSelf.navigationController pushViewController:loginVC animated:YES];
+    };
     _myTableView.delegate = self;
     _myTableView.dataSource = self;
     _myTableView.backgroundColor = [UIColor systemGray5Color];
@@ -116,6 +124,9 @@
     } else if (indexPath.section == 1){
         
     } else {
+        SetViewController *setVC = [[SetViewController alloc] init];
+        [self.navigationController pushViewController:setVC animated:YES];
+        
     }
 }
 @end
