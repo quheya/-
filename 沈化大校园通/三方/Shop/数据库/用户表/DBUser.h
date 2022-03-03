@@ -28,6 +28,7 @@
 /**
  *  删除
  */
+-(void)insetUser_Info:(NSString *)user_name WithUser_school:(NSString *)user_school WithUser_class:(NSString *)user_class WithUser_realname:(NSString *)user_realname;
 -(void)deleteWithUser_Name:(NSString *)user_name;
 /**
  *  更新数据

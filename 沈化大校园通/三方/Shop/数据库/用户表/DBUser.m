@@ -92,6 +92,19 @@
     }];
 }
 
+-(void)insetUser_Info:(NSString *)user_name WithUser_school:(NSString *)user_school WithUser_class:(NSString *)user_class WithUser_realname:(NSString *)user_realname{
+    [self.queue inDatabase:^(FMDatabase *db) {
+       // Log(@"qnmd");
+        BOOL flag = [db executeUpdate:@"insert into userinfo (user_name,school_name,class_name,user_realname) values (?,?,?,?)",user_name,user_school,user_class,user_realname];
+        if (flag) {
+            NSLog(@"新增数据成功");
+        }
+        else{
+            NSLog(@"新增数据失败");
+        }
+    }];
+}
+
 /**
  *  删除
  */
@@ -167,6 +180,7 @@
   */
 -(int)selectWithUser_Name:(NSString *)user_name WithUser_Password:(NSString *)user_password {
     [self.queue inDatabase:^(FMDatabase *db) {
+        
         //获取结果集,返回参数就是查询结果
         FMResultSet *rs = [db executeQuery:@"select user_name,user_password,user_type from user where user_name = ?",user_name];
         while ([rs next]) {

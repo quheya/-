@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "详情界面购物车按钮.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "详情界面购物车按钮@2x.png",
+      "filename" : "51ffcedcdaf60b7cfa3cd24fbe32fa22.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "详情界面购物车按钮@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

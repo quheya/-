@@ -12,6 +12,7 @@
 #import "MyViewController.h"
 #import "NavigationViewController.h"
 #import "DBObject.h"
+#import "TimeViewController.h"
 
 @interface MainTabBarController ()
 
@@ -23,23 +24,26 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
     
-    MainViewController *mainVc = [[MainViewController alloc] init];
+    TimeViewController *mainVc = [[TimeViewController alloc] init];
     mainVc.tabBarItem.title = @"主页";
     mainVc.tabBarItem.image = [UIImage imageNamed:@"bar_item_main"];
     mainVc.view.backgroundColor = [UIColor whiteColor];
-    [self addChildViewController:mainVc];
+    NavigationViewController *mainNav = [[NavigationViewController alloc] initWithRootViewController:mainVc];
+    [self addChildViewController:mainNav];
     
     WelcomeViewController *welcomeVc = [[WelcomeViewController alloc] init];
     welcomeVc.tabBarItem.title = @"迎新";
     welcomeVc.tabBarItem.image = [UIImage imageNamed:@"bar_item_new"];
     welcomeVc.view.backgroundColor = [UIColor whiteColor];
-    [self addChildViewController:welcomeVc];
+    NavigationViewController *welcomeNav = [[NavigationViewController alloc] initWithRootViewController:welcomeVc];
+    [self addChildViewController:welcomeNav];
     
     InterViewController *interVc = [[InterViewController alloc] init];
-    interVc.tabBarItem.title = @"互动";
+    interVc.tabBarItem.title = @"事务";
     interVc.tabBarItem.image = [UIImage imageNamed:@"bar_item_inter"];
     interVc.view.backgroundColor = [UIColor whiteColor];
-    [self addChildViewController:interVc];
+    NavigationViewController *interNav = [[NavigationViewController alloc] initWithRootViewController:interVc];
+    [self addChildViewController:interNav];
     
     MyViewController *myVc = [[MyViewController alloc] init];
     myVc.tabBarItem.title = @"我的";

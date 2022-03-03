@@ -223,7 +223,7 @@
         _orderLabel = [[UILabel alloc] init];
         _orderLabel.textColor = [UIColor blackColor];
         _orderLabel.font = [UIFont boldSystemFontOfSize:20.0];
-        _orderLabel.text = @"我的订单";
+        _orderLabel.text = @"信息采集";
     }
     return _orderLabel;
 }
@@ -233,7 +233,7 @@
         _moreOrderLabel = [[UILabel alloc] init];
         _moreOrderLabel.textColor = MainColor;
         _moreOrderLabel.font = [UIFont systemFontOfSize:16.0];
-        _moreOrderLabel.text = @"查看更多订单";
+        _moreOrderLabel.text = @"";
     }
     return _moreOrderLabel;
 }
@@ -299,7 +299,7 @@
         _payLabel = [[UILabel alloc] init];
         _payLabel.textColor = [UIColor blackColor];
         _payLabel.font = [UIFont systemFontOfSize:14.0];
-        _payLabel.text = @"待付款";
+        _payLabel.text = @"收信息";
     }
     return _payLabel;
 }
@@ -309,7 +309,7 @@
         _sendLabel = [[UILabel alloc] init];
         _sendLabel.textColor = [UIColor blackColor];
         _sendLabel.font = [UIFont systemFontOfSize:14.0];
-        _sendLabel.text = @"待发货";
+        _sendLabel.text = @"收截图";
     }
     return _sendLabel;
 }
@@ -319,7 +319,7 @@
         _receiveLabel = [[UILabel alloc] init];
         _receiveLabel.textColor = [UIColor blackColor];
         _receiveLabel.font = [UIFont systemFontOfSize:14.0];
-        _receiveLabel.text = @"待收货";
+        _receiveLabel.text = @"信息核对";
     }
     return _receiveLabel;
 }
@@ -329,7 +329,7 @@
         _commentLabel = [[UILabel alloc] init];
         _commentLabel.textColor = [UIColor blackColor];
         _commentLabel.font = [UIFont systemFontOfSize:14.0];
-        _commentLabel.text = @"待评价";
+        _commentLabel.text = @"留意见";
     }
     return _commentLabel;
 }
@@ -339,7 +339,7 @@
         _afterSaleLabel = [[UILabel alloc] init];
         _afterSaleLabel.textColor = [UIColor blackColor];
         _afterSaleLabel.font = [UIFont systemFontOfSize:14.0];
-        _afterSaleLabel.text = @"售后";
+        _afterSaleLabel.text = @"问客服";
     }
     return _afterSaleLabel;
 }

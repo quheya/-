@@ -67,9 +67,14 @@
     _nameButton.titleLabel.textAlignment = NSTextAlignmentLeft;
     [_nameButton addTarget:self action:@selector(nameBtnClick) forControlEvents:UIControlEventTouchUpInside];
     _lineView.backgroundColor = [UIColor whiteColor];
+    _classLabel.textAlignment = NSTextAlignmentCenter;
+    _classLabel.textColor = [UIColor orangeColor];
     _schoolLabel.backgroundColor = [UIColor clearColor];
     _schoolLabel.textColor = [UIColor whiteColor];
+    _schoolLabel.textAlignment = NSTextAlignmentLeft;
     _hlineView.backgroundColor = [UIColor grayColor];
+    _idLabel.textAlignment = NSTextAlignmentCenter;
+    _idLabel.textColor = [UIColor systemGreenColor];
 }
 
 - (void)_installContraints {
@@ -98,7 +103,7 @@
     [_schoolLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_topView.mas_top).with.offset(70);
         make.left.equalTo(_topView.mas_left).with.offset(120);
-        make.size.mas_equalTo(CGSizeMake(80, 30));
+        make.size.mas_equalTo(CGSizeMake(180, 30));
     }];
     [_hlineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_topView.mas_bottom).with.offset(0);
@@ -109,14 +114,16 @@
     
     //CGRectGetWidth(self.frame)
     [_classLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_topView.mas_bottom).with.offset(30);
-        make.left.equalTo(self.mas_left).with.offset( [UIScreen mainScreen].bounds.size.width / 6);
-        make.height.mas_equalTo(10);
+        make.top.equalTo(_topView.mas_bottom).with.offset(20);
+        make.left.equalTo(self.mas_left).with.offset(0);
+        make.right.equalTo(self.mas_left).with.offset([UIScreen mainScreen].bounds.size.width / 2);
+        make.height.mas_equalTo(15);
     }];
     [_idLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_topView.mas_bottom).with.offset(30);
-        make.left.equalTo(_hlineView.mas_left).with.offset([UIScreen mainScreen].bounds.size.width / 6);
-        make.height.mas_equalTo(10);
+        make.top.equalTo(_topView.mas_bottom).with.offset(20);
+        make.left.equalTo(_hlineView.mas_left).with.offset(0);
+        make.right.mas_equalTo(self.mas_right);
+        make.height.mas_equalTo(15);
     }];
 }
 

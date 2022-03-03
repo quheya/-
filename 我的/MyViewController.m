@@ -6,6 +6,9 @@
 //
 
 #import <Masonry/Masonry.h>
+#import "DBUser.h"
+#import "DBShoppingCart.h"
+#import "NSString+GenerateRandomString.h"
 #import "MyViewController.h"
 #import "MyTopView.h"
 #import "LoginViewController.h"
@@ -14,6 +17,7 @@
 @interface MyViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) MyTopView *mytopView;
 @property (nonatomic, strong) UITableView *myTableView;
+@property (nonatomic,strong) FMDatabaseQueue *queue;
 
 @end
 
@@ -46,6 +50,21 @@
         __strong typeof(weakSelf) strongSelf = weakSelf;
         LoginViewController *loginVC = [[LoginViewController alloc] init];
         [strongSelf.navigationController pushViewController:loginVC animated:YES];
+        NSString *cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)firstObject];
+        NSString *filePath = [cachePath stringByAppendingPathComponent:@"Shop.sqlite"];
+        strongSelf.queue = [FMDatabaseQueue databaseQueueWithPath:filePath];
+        loginVC.loginSucBlock = ^(NSDictionary *dic){
+            [strongSelf.queue inDatabase:^(FMDatabase *db) {
+                NSLog(@"qnmd");
+                FMResultSet *rs = [db executeQuery:@"select user_realname,school_name,class_name from userinfo where user_name = ?",dic[@"userName"]];
+                while ([rs next]) {
+                    strongSelf.mytopView.nameStr = [rs stringForColumn:@"user_realname"];
+                    strongSelf.mytopView.schoolStr = [rs stringForColumn:@"school_name"];
+                    strongSelf.mytopView.classStr = [rs stringForColumn:@"class_name"];
+                }
+            }];
+            strongSelf.mytopView.idStr = dic[@"userName"];
+        };
     };
     _myTableView.delegate = self;
     _myTableView.dataSource = self;

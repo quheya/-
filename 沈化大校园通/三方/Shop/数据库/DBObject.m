@@ -47,6 +47,9 @@
         //用户账号密码列表
         [db executeUpdate:@"create table if not exists user (id integer primary key autoincrement,user_name text,user_password text,user_type text)"]; //id，账号，密码，用户类型
         
+        //用户信息
+        [db executeUpdate:@"create table if not exists userinfo (id integer primary key autoincrement,user_name text,school_name text,class_name text,user_realname text)"];
+        
         //所有商品列表
         [db executeUpdate:@"create table if not exists productList (id integer primary key autoincrement,product_id text,product_name text,product_iconimage text,product_categoryid text,product_price text,product_marketprice text,product_description text)"];   //id、商品id、商品名称、商品图片、商品类别id、商品价格、市场售价、商品描述
         

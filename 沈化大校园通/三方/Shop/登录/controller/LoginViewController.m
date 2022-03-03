@@ -51,11 +51,12 @@
         __weak typeof (self) weakSelf = self;
 //        __block BOOL flag;
         _loginView.loginBlock = ^(NSDictionary *dic) {
+            __strong typeof(weakSelf) strongSelf = weakSelf;
             switch ([weakSelf loginMethod:(dic)]) {
                 case 0:
                     [weakSelf.view makeToast:@"登录成功！" duration:1.5 position:@"center"];
                     
-                    
+                    strongSelf.loginSucBlock(dic);
                     //跳转回“我的”页面,并延时1秒执行
                     [weakSelf performSelector:@selector(popMyViewController) withObject:nil afterDelay:1.0];
 //                    flag = YES;

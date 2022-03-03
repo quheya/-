@@ -123,6 +123,7 @@
         [_userNameText.leftView addSubview:imgUser];
         [_userNameText addTarget:self action:@selector(userNameTextChangeText:) forControlEvents:UIControlEventEditingChanged];
     }
+    _userNameText.text = @"1816050307";
     return _userNameText;
 }
 
@@ -142,6 +143,7 @@
         _passwordText.placeholder = @"请输入账号密码";
         [_passwordText addTarget:self action:@selector(passwordTextChangeText:) forControlEvents:UIControlEventEditingChanged];
     }
+    _passwordText.text = @"eeeeee";
     return _passwordText;
 }
 

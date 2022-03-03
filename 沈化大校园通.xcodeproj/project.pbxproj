@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		A5D06C7227C62F390002EA21 /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D06C7127C62F390002EA21 /* SetViewController.m */; };
 		A5D06C7527C6373A0002EA21 /* AboutAutherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D06C7427C6373A0002EA21 /* AboutAutherViewController.m */; };
+		A5D2316D27CF11B400A5C52D /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D2316C27CF11B400A5C52D /* NewsViewController.m */; };
+		A5D2317027CF94D100A5C52D /* interCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D2316F27CF94D100A5C52D /* interCellCollectionViewCell.m */; };
+		A5D2317327D0A7C300A5C52D /* CheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D2317227D0A7C300A5C52D /* CheckViewController.m */; };
+		A5D2317627D0AFD700A5C52D /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D2317527D0AFD700A5C52D /* InfoViewController.m */; };
 		A5D2B6EE27BA525100BAFA22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D2B6ED27BA525100BAFA22 /* AppDelegate.m */; };
 		A5D2B6F727BA525100BAFA22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D2B6F527BA525100BAFA22 /* Main.storyboard */; };
 		A5D2B6F927BA525500BAFA22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D2B6F827BA525500BAFA22 /* Assets.xcassets */; };
@@ -159,6 +163,14 @@
 		A5D06C7127C62F390002EA21 /* SetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
 		A5D06C7327C637390002EA21 /* AboutAutherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutAutherViewController.h; sourceTree = "<group>"; };
 		A5D06C7427C6373A0002EA21 /* AboutAutherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutAutherViewController.m; sourceTree = "<group>"; };
+		A5D2316B27CF11B400A5C52D /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		A5D2316C27CF11B400A5C52D /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		A5D2316E27CF94D100A5C52D /* interCellCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = interCellCollectionViewCell.h; sourceTree = "<group>"; };
+		A5D2316F27CF94D100A5C52D /* interCellCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = interCellCollectionViewCell.m; sourceTree = "<group>"; };
+		A5D2317127D0A7C300A5C52D /* CheckViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckViewController.h; sourceTree = "<group>"; };
+		A5D2317227D0A7C300A5C52D /* CheckViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckViewController.m; sourceTree = "<group>"; };
+		A5D2317427D0AFD700A5C52D /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		A5D2317527D0AFD700A5C52D /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		A5D2B6E927BA525100BAFA22 /* 沈化大校园通.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "沈化大校园通.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D2B6EC27BA525100BAFA22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A5D2B6ED27BA525100BAFA22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -522,6 +534,10 @@
 			children = (
 				A5D5AB3527C4E6EC00E1424C /* WelcomeViewController.h */,
 				A5D5AB3627C4E6EC00E1424C /* WelcomeViewController.m */,
+				A5D2317127D0A7C300A5C52D /* CheckViewController.h */,
+				A5D2317227D0A7C300A5C52D /* CheckViewController.m */,
+				A5D2317427D0AFD700A5C52D /* InfoViewController.h */,
+				A5D2317527D0AFD700A5C52D /* InfoViewController.m */,
 			);
 			path = "迎新";
 			sourceTree = SOURCE_ROOT;
@@ -531,6 +547,8 @@
 			children = (
 				A5D5AB3927C4E6F500E1424C /* InterViewController.h */,
 				A5D5AB3A27C4E6F500E1424C /* InterViewController.m */,
+				A5D2316E27CF94D100A5C52D /* interCellCollectionViewCell.h */,
+				A5D2316F27CF94D100A5C52D /* interCellCollectionViewCell.m */,
 			);
 			path = "互动";
 			sourceTree = SOURCE_ROOT;
@@ -734,13 +752,13 @@
 				A5D5AB7127C4FF4900E1424C /* MyMessageTableViewCell.m */,
 				A5D5AB7227C4FF4900E1424C /* MyMessageTableView.h */,
 				A5D5AB7327C4FF4900E1424C /* MyMessageHeadView.m */,
+				A5D5AB7A27C4FF4900E1424C /* MyMessageNormalUser.h */,
 				A5D5AB7427C4FF4900E1424C /* MyMessageNormalUser.m */,
 				A5D5AB7527C4FF4900E1424C /* MyMessageTableViewCell.h */,
 				A5D5AB7627C4FF4900E1424C /* ManagerView.m */,
 				A5D5AB7727C4FF4900E1424C /* MyMessageTablePlist.plist */,
 				A5D5AB7827C4FF4900E1424C /* MyMessageHeadView.h */,
 				A5D5AB7927C4FF4900E1424C /* MyMessageTableView.m */,
-				A5D5AB7A27C4FF4900E1424C /* MyMessageNormalUser.h */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -816,8 +834,10 @@
 		A5D5AB8E27C4FF4900E1424C /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				A5D5AB8F27C4FF4900E1424C /* TimeViewController.m */,
 				A5D5AB9027C4FF4900E1424C /* TimeViewController.h */,
+				A5D5AB8F27C4FF4900E1424C /* TimeViewController.m */,
+				A5D2316B27CF11B400A5C52D /* NewsViewController.h */,
+				A5D2316C27CF11B400A5C52D /* NewsViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -827,8 +847,8 @@
 			children = (
 				A5D5AB9227C4FF4900E1424C /* SingleListModel.h */,
 				A5D5AB9327C4FF4900E1424C /* ForumListModel.m */,
-				A5D5AB9427C4FF4900E1424C /* SingleListModel.m */,
 				A5D5AB9527C4FF4900E1424C /* ForumListModel.h */,
+				A5D5AB9427C4FF4900E1424C /* SingleListModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -836,14 +856,14 @@
 		A5D5AB9627C4FF4900E1424C /* view */ = {
 			isa = PBXGroup;
 			children = (
-				A5D5AB9727C4FF4900E1424C /* SingleTableView.h */,
-				A5D5AB9827C4FF4900E1424C /* TimeTwoBtnView.h */,
-				A5D5AB9927C4FF4900E1424C /* ForumTableCell.m */,
-				A5D5AB9A27C4FF4A00E1424C /* SingleTableViewCell.m */,
-				A5D5AB9B27C4FF4A00E1424C /* SingleTableView.m */,
 				A5D5AB9C27C4FF4A00E1424C /* ForumTableCell.h */,
-				A5D5AB9D27C4FF4A00E1424C /* TimeTwoBtnView.m */,
+				A5D5AB9927C4FF4900E1424C /* ForumTableCell.m */,
 				A5D5AB9E27C4FF4A00E1424C /* SingleTableViewCell.h */,
+				A5D5AB9A27C4FF4A00E1424C /* SingleTableViewCell.m */,
+				A5D5AB9727C4FF4900E1424C /* SingleTableView.h */,
+				A5D5AB9B27C4FF4A00E1424C /* SingleTableView.m */,
+				A5D5AB9827C4FF4900E1424C /* TimeTwoBtnView.h */,
+				A5D5AB9D27C4FF4A00E1424C /* TimeTwoBtnView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1716,12 +1736,14 @@
 				A5D5ACBF27C4FF4C00E1424C /* UpdateListCollectionViewCell.m in Sources */,
 				A5D5ACAD27C4FF4C00E1424C /* DBUser.m in Sources */,
 				A5D5ACA427C4FF4C00E1424C /* DetailsTitleLabelView.m in Sources */,
+				A5D2317627D0AFD700A5C52D /* InfoViewController.m in Sources */,
 				A5D5ACA027C4FF4C00E1424C /* DetailsTwoBtnView.m in Sources */,
 				A5D5AC8C27C4FF4C00E1424C /* WaitPayTableView.m in Sources */,
 				A5D5ACCA27C4FF4C00E1424C /* OrderViewController.m in Sources */,
 				A5D5ACD127C4FF4C00E1424C /* WaitSendTableView.m in Sources */,
 				A5D5ACB327C4FF4C00E1424C /* DBOrderDetail.m in Sources */,
 				A5D5ACC227C4FF4C00E1424C /* AddProductViewController.m in Sources */,
+				A5D2316D27CF11B400A5C52D /* NewsViewController.m in Sources */,
 				A5D5AB4527C4E72700E1424C /* MainTabBarController.m in Sources */,
 				A5D5AC9A27C4FF4C00E1424C /* AddressViewController.m in Sources */,
 				A5D5ACBB27C4FF4C00E1424C /* PayMentViewController.m in Sources */,
@@ -1736,12 +1758,14 @@
 				A5D5AC8427C4FF4C00E1424C /* MyMessageHeadView.m in Sources */,
 				A5D5AC8627C4FF4C00E1424C /* ManagerView.m in Sources */,
 				A5D5ACCC27C4FF4C00E1424C /* OrderTableView.m in Sources */,
+				A5D2317027CF94D100A5C52D /* interCellCollectionViewCell.m in Sources */,
 				A5D5AC9127C4FF4C00E1424C /* SingleListModel.m in Sources */,
 				A5D5ACBA27C4FF4C00E1424C /* AddForumView.m in Sources */,
 				A5D5ACD027C4FF4C00E1424C /* WaitSendTableViewCell.m in Sources */,
 				A5D5ACA327C4FF4C00E1424C /* BottomImageView.m in Sources */,
 				A5D5AC8B27C4FF4C00E1424C /* WaitPayView.m in Sources */,
 				A5D5ACA727C4FF4C00E1424C /* ClassView.m in Sources */,
+				A5D2317327D0A7C300A5C52D /* CheckViewController.m in Sources */,
 				A5D5AC9E27C4FF4C00E1424C /* DetailsViewController.m in Sources */,
 				A5D5ACCB27C4FF4C00E1424C /* OrderTableCell.m in Sources */,
 				A5D5ACAC27C4FF4C00E1424C /* DBPayMent.m in Sources */,

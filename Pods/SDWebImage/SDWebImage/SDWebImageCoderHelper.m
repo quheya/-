@@ -222,7 +222,7 @@
             exifOrientation = 5;
             break;
         case UIImageOrientationRightMirrored:
-            exifOrientation = 7;
+            exifOrientation = 9;
             break;
         default:
             break;

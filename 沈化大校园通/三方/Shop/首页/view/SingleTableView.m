@@ -55,11 +55,6 @@
 }
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    /*UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-     if (!cell) {
-     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-     }
-     cell.textLabel.text = [NSString stringWithFormat:@"%li",(long)indexPath.row];*/
     
     if (_isSingle) {
         //        cell.backgroundColor = [UIColor redColor];
@@ -97,11 +92,5 @@
         }
     }
 }
-
-
-
-
-
-
 
 @end

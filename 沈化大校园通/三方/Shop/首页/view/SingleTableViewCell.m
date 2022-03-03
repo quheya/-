@@ -96,7 +96,7 @@
 //价格Label的样式设置
 - (void) priceAttributedString {
     //当前价格(需要手动添加人民币符号)
-    NSString *nowPrice = [NSString stringWithFormat:@"￥%@ ",_singleModel.product_marketprice];
+    NSString *nowPrice = [NSString stringWithFormat:@"👍%@ ",_singleModel.product_marketprice];
     NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:nowPrice
                                                                                attributes:@{NSForegroundColorAttributeName:RGB(230, 51, 37),
                                                                                                                 NSFontAttributeName:[UIFont boldSystemFontOfSize:18.0]
@@ -104,7 +104,7 @@
     
     //过去价格(需要手动添加人民币符号)
 //    NSString *oldString = [NSString stringWithFormat:@"%@ ",_singleModel.product_price];
-    NSString *price = [NSString stringWithFormat:@"￥%@ ",_singleModel.product_price];
+    NSString *price = [NSString stringWithFormat:@"%@ ",_singleModel.product_price];
     NSMutableAttributedString *oldPrice = [[NSMutableAttributedString alloc] initWithString:price
                                                                                  attributes:@{NSForegroundColorAttributeName:RGB(132, 132, 132),
                                                                                                                NSFontAttributeName:[UIFont systemFontOfSize:12.0],
