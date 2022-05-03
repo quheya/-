@@ -43,10 +43,10 @@
 }
 
 - (void)_iniliza {
-    _sectionArray = @[@"", @""];
+    _sectionArray = @[@"办公", @"日常"];
     _rowArray = @[
-        @[@"", @"", @"",],
-        @[@"", @"", @"", @""]
+        @[@"教务处", @"办事大厅", @"官网",@"图书馆"],
+        @[@"占教室", @"一键vpn", @"进校预约"]
     ];
     _topImageView.image = [UIImage imageNamed:@"interIcon"];
     _collectiveView.backgroundColor = [UIColor systemGray5Color];
@@ -66,11 +66,12 @@
 // MARK: UICollectionViewDelegate, UICollectionViewDataSource
 //返回分区个数
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
-    return 2;
+    return _sectionArray.count;
 }
 //返回每个分区的item个数
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 7;
+    NSArray *temArray = _rowArray[section];
+    return temArray.count;
 }
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
     CGSize size={110,40};
@@ -84,7 +85,7 @@
         header.backgroundColor = [UIColor whiteColor];
         UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 3, 100, 30)];
         headerLabel.textColor = [UIColor grayColor];
-        headerLabel.text = @"办公";
+        headerLabel.text = _sectionArray[indexPath.section];
         [header addSubview:headerLabel];
         reusableView = header;
     }
@@ -96,7 +97,7 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
    interCellCollectionViewCell * cell  = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellid" forIndexPath:indexPath];
     cell.backgroundColor = [UIColor whiteColor];
-    cell.temStr = @"办事大厅";
+    cell.temStr = _rowArray[indexPath.section][indexPath.row];
     cell.temImage = [UIImage imageNamed:@"info_rate_icon"];
     return cell;
 }

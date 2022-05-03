@@ -136,6 +136,7 @@
 		A5D5ACE027C4FF4C00E1424C /* DeleteProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D5AC6D27C4FF4B00E1424C /* DeleteProductTableViewCell.m */; };
 		A5D5ACE127C4FF4C00E1424C /* ForumDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D5AC7227C4FF4B00E1424C /* ForumDetialViewController.m */; };
 		A5D5ACE227C4FF4C00E1424C /* ForumDetialView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D5AC7527C4FF4B00E1424C /* ForumDetialView.m */; };
+		A5E17D7827FEBB690040EEA7 /* ShoujiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E17D7727FEBB690040EEA7 /* ShoujiViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -410,6 +411,8 @@
 		A5D5AC7527C4FF4B00E1424C /* ForumDetialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumDetialView.m; sourceTree = "<group>"; };
 		A5D5AC7627C4FF4B00E1424C /* ForumDetialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumDetialView.h; sourceTree = "<group>"; };
 		A5D5AC7727C4FF4B00E1424C /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A5E17D7627FEBB690040EEA7 /* ShoujiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoujiViewController.h; sourceTree = "<group>"; };
+		A5E17D7727FEBB690040EEA7 /* ShoujiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoujiViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -538,6 +541,8 @@
 				A5D2317227D0A7C300A5C52D /* CheckViewController.m */,
 				A5D2317427D0AFD700A5C52D /* InfoViewController.h */,
 				A5D2317527D0AFD700A5C52D /* InfoViewController.m */,
+				A5E17D7627FEBB690040EEA7 /* ShoujiViewController.h */,
+				A5E17D7727FEBB690040EEA7 /* ShoujiViewController.m */,
 			);
 			path = "迎新";
 			sourceTree = SOURCE_ROOT;
@@ -1733,6 +1738,7 @@
 				A5D5ACC327C4FF4C00E1424C /* AddProductView.m in Sources */,
 				A5D5ACBE27C4FF4C00E1424C /* UpdateListViewController.m in Sources */,
 				A5D5ACC727C4FF4C00E1424C /* ShoppingCartListView.m in Sources */,
+				A5E17D7827FEBB690040EEA7 /* ShoujiViewController.m in Sources */,
 				A5D5ACBF27C4FF4C00E1424C /* UpdateListCollectionViewCell.m in Sources */,
 				A5D5ACAD27C4FF4C00E1424C /* DBUser.m in Sources */,
 				A5D5ACA427C4FF4C00E1424C /* DetailsTitleLabelView.m in Sources */,

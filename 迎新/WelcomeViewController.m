@@ -10,6 +10,7 @@
 #import "CheckViewController.h"
 #import "AboutAutherViewController.h"
 #import "InfoViewController.h"
+#import "ShoujiViewController.h"
 
 @interface WelcomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) UIImageView *topImageView;
@@ -125,7 +126,8 @@
 // MARK: 点击方法
 
 - (void) payButtonMethod {
-    
+    ShoujiViewController *shoujiVC = [[ShoujiViewController alloc] init];
+    [self.navigationController pushViewController:shoujiVC animated:YES];
 }
 
 - (void) sendButtonMethod {
@@ -138,11 +140,13 @@
 }
 
 - (void) commentButtonMethod {
-  
+    ShoujiViewController *shoujiVC = [[ShoujiViewController alloc] init];
+    [self.navigationController pushViewController:shoujiVC animated:YES];
 }
 
 - (void) moreOrderButtonMethod {
-   
+    ShoujiViewController *shoujiVC = [[ShoujiViewController alloc] init];
+    [self.navigationController pushViewController:shoujiVC animated:YES];
 }
 
 - (void) afterSaleButtonMethod {

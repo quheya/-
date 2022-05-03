@@ -1,20 +1,19 @@
 //
-//  CheckViewController.m
+//  ShoujiViewController.m
 //  沈化大校园通
 //
-//  Created by quhe qu on 2022/3/3.
+//  Created by quhe qu on 2022/4/7.
 //
 
-#import "CheckViewController.h"
+#import "ShoujiViewController.h"
 
-@interface CheckViewController ()
+@interface ShoujiViewController ()
 @property (strong, nonatomic) UIView *backView;
-@property (strong, nonatomic) UILabel *infoLabel;
+@property (strong, nonatomic) UITextField *infoLabel;
 @property (strong, nonatomic) UIButton *checkButton;
-
 @end
 
-@implementation CheckViewController
+@implementation ShoujiViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,7 +27,7 @@
     _backView = [[UIView alloc] init];
     [self.view addSubview:_backView];
     
-    _infoLabel = [[UILabel alloc] init];
+    _infoLabel = [[UITextField alloc] init];
     [self.view addSubview:_infoLabel];
     
     _checkButton = [[UIButton alloc] init];
@@ -37,10 +36,9 @@
 
 - (void)iniliza {
     _backView.backgroundColor = [UIColor whiteColor];
-    _infoLabel.text = @"确认学籍信息无问题";
     [_checkButton addTarget:self  action:@selector(checkClick:) forControlEvents:UIControlEventTouchUpInside];
-    [_checkButton setTitle:@"确认信息" forState:UIControlStateNormal];
-    [_checkButton setTitle:@"已确认" forState:UIControlStateSelected];
+    [_checkButton setTitle:@"提交" forState:UIControlStateNormal];
+    [_checkButton setTitle:@"提交成功" forState:UIControlStateSelected | UIControlStateHighlighted];
     _checkButton.backgroundColor = [UIColor redColor];
     _checkButton.layer.cornerRadius = 12;
     _checkButton.clipsToBounds = YES;
